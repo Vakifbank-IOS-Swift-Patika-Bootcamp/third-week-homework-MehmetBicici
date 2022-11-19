@@ -35,8 +35,6 @@ class ListEmployeeViewController: UIViewController {
     @objc func backTapped() {
         self.navigationController?.popViewController(animated: true)
     }
-
-
 }
 
 extension ListEmployeeViewController: UITableViewDelegate, UITableViewDataSource {

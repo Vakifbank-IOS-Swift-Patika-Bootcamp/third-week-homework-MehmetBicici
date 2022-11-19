@@ -9,14 +9,10 @@ import UIKit
 
 class ListeEmployeeTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var nameLabel: UILabel!
     
     func setup(employee: String) {
-        
         nameLabel.text = employee
-        
-        
     }
     
 }

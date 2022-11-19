@@ -11,8 +11,6 @@ class AddEmployeeScreenViewModel {
     var data = AccessScreenViewModel()
     static var addedData = Company(employee: [])
     
-   
-    
     func getDataForAdding() -> Company {
         if AddEmployeeScreenViewModel.addedData.companyName != nil  {
             let difData = AddEmployeeScreenViewModel.addedData

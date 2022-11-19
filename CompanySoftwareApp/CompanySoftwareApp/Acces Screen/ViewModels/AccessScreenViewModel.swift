@@ -22,8 +22,6 @@ class AccessScreenViewModel {
     func getData() -> Company {
         
         return company
-        
-        
     }
     
     func increaseIncome(income: String, value: Double) -> Double  {

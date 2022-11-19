@@ -53,10 +53,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func setInitialViewController()  {
-        
         // Set Custom Xib
         let vc = AccessScreenViewController(nibName: "AccessScreenViewController", bundle: nil)
-        
         // Navigation Controller
         let nav = UINavigationController(rootViewController: vc)
         nav.isNavigationBarHidden = true

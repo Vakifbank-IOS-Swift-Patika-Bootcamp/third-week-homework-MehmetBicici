@@ -92,7 +92,6 @@ class AddEmployeeScreenViewController: UIViewController {
             salaryLabel.text = "ERROR!At least one of the values entered is incorrect"
         }
         
-        
     }
     
 }

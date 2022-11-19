@@ -42,9 +42,8 @@ class AccessScreenViewController: UIViewController {
     var status = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        let deneme = AddEmployeeScreenViewController()
         viewModel.createData()
-        var company = viewModel.getData()
+        let company = viewModel.getData()
         setupData(company: company)
         dolarLabel.text = "$"
         dolarLabel.font = dolarLabel.font.withSize(20)
@@ -75,7 +74,6 @@ class AccessScreenViewController: UIViewController {
         
         if status {
             
-           
             let company = viewModel.getNewData(newCompany: AddEmployeeScreenViewModel.addedData)
             setupData(company: company)
             dolarLabel.text = "$"
@@ -128,7 +126,6 @@ class AccessScreenViewController: UIViewController {
             let newIncome = viewModel.increaseIncome(income: incomeForCompanyLabel.text ?? "0", value: num)
             incomeForCompanyLabel.text = String(newIncome)
         }
-        
     }
     
     @IBAction func decreaseIncomeButtonTapped(_ sender: Any) {
@@ -151,8 +148,6 @@ class AccessScreenViewController: UIViewController {
             let newIncome = viewModel.salaryPayment(company: company, employeeName: text,income: incomeForCompanyLabel.text ?? "0")
             incomeForCompanyLabel.text = String(newIncome)
         }
-        
-        
     }
     
     @IBAction func addEmployeeButtonTapped(_ sender: Any) {
