@@ -1,3 +1,4 @@
+# WARNING : While doing the homework, I used version 13.4.1 of Xcode
 # Third-Week-Homework
 1- Şirket Playground Yazılımının Xcode ile projelendirilmesi yapılacaktır. Aşağıdaki özelliklerin bulunması gerekmektedir:
 --
