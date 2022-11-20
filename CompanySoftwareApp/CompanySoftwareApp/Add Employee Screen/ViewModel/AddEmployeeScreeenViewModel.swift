@@ -20,7 +20,6 @@ class AddEmployeeScreenViewModel {
             let difData = data.getData()
             return difData
         }
-        return Company(employee: [])
     }
     
     func addNewEmployee(companyObject: Company,employeeList: Employee) -> Company {

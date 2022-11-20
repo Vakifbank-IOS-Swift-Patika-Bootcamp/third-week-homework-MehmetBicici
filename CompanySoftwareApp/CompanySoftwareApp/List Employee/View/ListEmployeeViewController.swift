@@ -10,15 +10,12 @@ import UIKit
 class ListEmployeeViewController: UIViewController {
     var viewModel = ListEmployeeViewModel()
     var acccesScreenViewModel = AccessScreenViewModel()
-    var data = ["Patrick Bateman", "Jordan Belfort", "Antonio Montana", "Tyler Durden"]
-    var filteredData: [String]!
     @IBOutlet private weak var navigationBar: UINavigationBar!
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filteredData = data
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(cellClass: ListeEmployeeTableViewCell.self)
@@ -38,6 +35,7 @@ class ListEmployeeViewController: UIViewController {
 }
 
 extension ListEmployeeViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if AddEmployeeScreenViewModel.addedData.companyName != nil {
